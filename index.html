@@ -12,156 +12,120 @@
     :root {
       --color-bg: #050505;
       --color-surface: #111111;
-      --color-text: #f5f5f5;
-      --color-primary: #00F0FF; /* Azul Elétrico da sua logo */
+      --color-primary: #00F0FF;
     }
     .font-display { font-family: 'Playfair Display', serif; }
     .font-body { font-family: 'DM Sans', sans-serif; }
-    
     .gradient-cyan {
       background: linear-gradient(135deg, #00F0FF 0%, #70FFFF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    
     .btn-cyan {
       background: #00F0FF;
       transition: all 0.3s ease;
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
     }
     .btn-cyan:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.6);
     }
-    
-    .card-glow {
-      background: var(--color-surface);
-      border: 1px solid rgba(0, 240, 255, 0.1);
-      transition: all 0.4s ease;
-    }
-    .card-glow:hover {
-      border-color: rgba(0, 240, 255, 0.5);
-      box-shadow: 0 0 40px rgba(0, 240, 255, 0.1);
-    }
-    
     .pattern-bg {
       background-image: radial-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px);
       background-size: 50px 50px;
     }
-
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
     .animate-in { animation: fadeInUp 0.8s ease-out forwards; }
   </style>
  </head>
- <body class="h-full font-body bg-[#050505] text-[#f5f5f5]">
+ <body class="h-full font-body bg-[#050505] text-white">
   <div class="w-full h-full overflow-auto pattern-bg">
    
-   <nav class="p-8 max-w-6xl mx-auto flex justify-center md:justify-start items-center relative z-20">
-      <img src="logo.png" alt="PONCE Assessoria" class="h-16 w-auto object-contain">
+   <nav class="p-6 max-w-7xl mx-auto relative z-20">
+      <img src="logo.png" alt="PONCE Assessoria" class="h-12 w-auto object-contain">
    </nav>
 
-   <header class="relative min-h-[70vh] flex items-center justify-center px-4 py-12">
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-     <div class="absolute top-20 left-10 w-72 h-72 rounded-full opacity-10 bg-[#00F0FF] blur-[100px]"></div>
-     <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-10 bg-[#00F0FF] blur-[120px]"></div>
-    </div>
-    
-    <div class="relative z-10 max-w-6xl mx-auto text-center">
-     <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 animate-in leading-tight">
+   <header class="relative max-w-7xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-12">
+    <div class="lg:w-1/2 z-10 text-center lg:text-left">
+     <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-in leading-tight">
       Estratégia <span class="gradient-cyan">Digital</span><br>para a Alta Gastronomia
      </h1>
-     
-     <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-400 animate-in">
-      Elevamos o faturamento do seu restaurante através de marketing de elite e gestão de tráfego focada em conversão.
+     <p class="text-lg md:text-xl mb-10 text-gray-400 animate-in delay-100">
+      Elevamos o posicionamento e o faturamento do seu restaurante através de marketing de elite e gestão de tráfego focada em conversão.
      </p>
-
-     <a href="#formulario" class="btn-cyan inline-flex items-center gap-2 px-10 py-4 rounded-full font-bold text-black text-lg animate-in">
+     <a href="#formulario" class="btn-cyan inline-flex items-center gap-2 px-10 py-4 rounded-full font-bold text-black text-lg animate-in delay-200">
       Solicitar Análise Gratuita
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
      </a>
-
-     <div class="grid grid-cols-3 gap-6 mt-20 max-w-3xl mx-auto opacity-80">
-      <div class="text-center">
-       <div class="font-display text-3xl font-bold text-[#00F0FF]">150+</div>
-       <div class="text-xs uppercase tracking-widest text-gray-500 mt-1">Projetos</div>
-      </div>
-      <div class="text-center">
-       <div class="font-display text-3xl font-bold text-[#00F0FF]">3x</div>
-       <div class="text-xs uppercase tracking-widest text-gray-500 mt-1">ROI Médio</div>
-      </div>
-      <div class="text-center">
-       <div class="font-display text-3xl font-bold text-[#00F0FF]">Elite</div>
-       <div class="text-xs uppercase tracking-widest text-gray-500 mt-1">Padrão</div>
-      </div>
+     
+     <div class="flex justify-center lg:justify-start gap-8 mt-12 opacity-80 animate-in delay-300">
+        <div><div class="text-2xl font-bold text-[#00F0FF]">150+</div><div class="text-xs uppercase text-gray-500">Projetos</div></div>
+        <div><div class="text-2xl font-bold text-[#00F0FF]">3x</div><div class="text-xs uppercase text-gray-500">ROI Médio</div></div>
+        <div><div class="text-2xl font-bold text-[#00F0FF]">Elite</div><div class="text-xs uppercase text-gray-500">Padrão</div></div>
      </div>
+    </div>
+
+    <div class="lg:w-1/2 relative animate-in">
+        <div class="absolute -inset-4 bg-[#00F0FF] blur-[80px] opacity-10 rounded-full"></div>
+        <img src="ceos.jpg" alt="CEOs PONCE Assessoria" class="relative rounded-2xl w-full h-auto object-cover border border-[#00F0FF]/20 shadow-2xl shadow-[#00F0FF]/10">
     </div>
    </header>
 
-   <section class="py-24 px-4 bg-[#0a0a0a]">
-    <div class="max-w-6xl mx-auto">
-     <h2 class="font-display text-4xl text-center mb-16">Nossos <span class="text-[#00F0FF]">Pilares</span></h2>
-     <div class="grid md:grid-cols-3 gap-8">
-      <div class="card-glow rounded-3xl p-10">
-       <h3 class="font-display text-2xl mb-4 text-[#00F0FF]">Tráfego Pago</h3>
-       <p class="text-gray-400 leading-relaxed">Anúncios de alta performance no Meta e Google Ads para atrair clientes prontos para consumir.</p>
-      </div>
-      <div class="card-glow rounded-3xl p-10">
-       <h3 class="font-display text-2xl mb-4 text-[#00F0FF]">Branding Visual</h3>
-       <p class="text-gray-400 leading-relaxed">Criação de conteúdo cinematográfico que valoriza o seu menu e a experiência da sua casa.</p>
-      </div>
-      <div class="card-glow rounded-3xl p-10">
-       <h3 class="font-display text-2xl mb-4 text-[#00F0FF]">Consultoria</h3>
-       <p class="text-gray-400 leading-relaxed">Inteligência de mercado para otimizar seus processos e escala de vendas constante.</p>
-      </div>
-     </div>
-    </div>
-   </section>
-
-   <section id="formulario" class="py-24 px-4 bg-black">
+   <section id="formulario" class="py-24 px-6 bg-black">
     <div class="max-w-xl mx-auto">
      <div class="text-center mb-12">
-      <h2 class="font-display text-4xl mb-4">Inicie sua <span class="text-[#00F0FF]">Expansão</span></h2>
-      <p class="text-gray-500">Receba uma consultoria estratégica personalizada pelo WhatsApp.</p>
+      <h2 class="font-display text-4xl mb-4 italic">Inicie sua <span class="text-[#00F0FF]">Expansão</span></h2>
+      <p class="text-gray-500">Preencha os dados e receba uma análise estratégica.</p>
      </div>
      
-     <form id="contact-form" class="space-y-5 bg-[#111] p-8 rounded-3xl border border-[#00F0FF]/20">
-      <input type="text" id="empresa" placeholder="Nome do Restaurante" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-white outline-none">
+     <form id="contact-form" class="space-y-4 bg-[#111] p-8 rounded-3xl border border-[#00F0FF]/20">
+      <input type="text" id="empresa" placeholder="Nome da Empresa" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-white outline-none">
+      
+      <select id="segmento" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-gray-400 outline-none cursor-pointer">
+        <option value="" disabled selected>Qual o segmento?</option>
+        <option value="Restaurante">Restaurante</option>
+        <option value="Pizzaria">Pizzaria</option>
+        <option value="Hamburgueria">Hamburgueria</option>
+        <option value="Sushi Bar">Sushi Bar</option>
+        <option value="Cafeteria">Cafeteria</option>
+        <option value="Outros">Outros</option>
+      </select>
+
       <input type="email" id="email" placeholder="E-mail Profissional" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-white outline-none">
-      <input type="tel" id="telefone" placeholder="WhatsApp (DDD)" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-white outline-none">
+      <input type="tel" id="telefone" placeholder="WhatsApp com DDD" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-white outline-none">
       
       <select id="faturamento" required class="w-full px-5 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-gray-400 outline-none">
-       <option value="" disabled selected>Faturamento Mensal Atual</option>
+       <option value="" disabled selected>Faturamento Mensal</option>
        <option value="Até 30k">Até R$ 30.000</option>
        <option value="30k a 100k">R$ 30.000 a R$ 100.000</option>
        <option value="Acima de 100k">Acima de R$ 100.000</option>
       </select>
 
       <button type="submit" class="btn-cyan w-full py-5 rounded-xl font-bold text-black uppercase tracking-widest text-sm mt-4">
-       Enviar para WhatsApp
+       Falar com Consultor no WhatsApp
       </button>
      </form>
     </div>
    </section>
 
-   <footer class="py-12 text-center border-t border-gray-900 bg-[#050505]">
-    <p class="text-gray-600 text-xs tracking-widest">© 2026 PONCE ASSESSORIA - TODOS OS DIREITOS RESERVADOS</p>
+   <footer class="py-12 text-center border-t border-gray-900">
+    <img src="logo.png" alt="PONCE" class="h-8 mx-auto mb-4 opacity-50">
+    <p class="text-gray-600 text-xs tracking-widest uppercase">© 2026 PONCE ASSESSORIA - Marketing Gastronômico</p>
    </footer>
   </div>
 
   <script>
-    // Máscara de Telefone
     document.getElementById('telefone').addEventListener('input', function (e) {
       let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
       e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
     });
 
-    // Envio para WhatsApp
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      const msg = `🚀 *CONTATO PONCE ASSESSORIA*\n\n*Empresa:* ${document.getElementById('empresa').value}\n*E-mail:* ${document.getElementById('email').value}\n*WhatsApp:* ${document.getElementById('telefone').value}\n*Faturamento:* ${document.getElementById('faturamento').value}`;
+      const msg = `🚀 *NOVO LEAD PONCE*\n\n*Empresa:* ${document.getElementById('empresa').value}\n*Segmento:* ${document.getElementById('segmento').value}\n*WhatsApp:* ${document.getElementById('telefone').value}\n*Faturamento:* ${document.getElementById('faturamento').value}`;
       window.open(`https://wa.me/5561995801020?text=${encodeURIComponent(msg)}`, '_blank');
     });
   </script>
