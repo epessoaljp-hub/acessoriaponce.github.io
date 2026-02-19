@@ -27,7 +27,7 @@
   <nav class="fixed top-0 w-full z-50 bg-[#050505]/90 backdrop-blur-md border-b border-white/5 px-6 py-4">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <img src="logo.png" alt="PONCE" class="h-10 w-auto">
-      <div class="hidden md:flex gap-8 items-center text-xs font-bold tracking-widest uppercase">
+      <div class="hidden md:flex gap-8 items-center text-[10px] font-bold tracking-[0.2em] uppercase">
         <a href="#" class="hover:text-[#00F0FF] transition">Início</a>
         <a href="#sobre" class="hover:text-[#00F0FF] transition">Sobre a Ponce</a>
         <a href="#contrate" class="btn-cyan px-6 py-2 rounded-lg">Contrate</a>
@@ -37,11 +37,13 @@
 
   <header class="pt-40 pb-24 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
     <div class="lg:w-1/2 text-center lg:text-left">
-      <h1 class="font-display text-5xl lg:text-7xl font-bold leading-tight mb-6">
-        Estratégia <span class="gradient-cyan">Digital</span> para a alta gastronomia
+      <h1 class="font-display text-4xl lg:text-6xl font-bold leading-tight mb-6 animate-in">
+        Transformamos restaurantes em <span class="gradient-cyan">máquinas previsíveis</span> de faturamento
       </h1>
-      <p class="text-gray-400 text-lg lg:max-w-md mb-10 leading-relaxed">Não somos uma agência de posts. Somos uma assessoria de <strong>Growth</strong> focada em escala de faturamento e dominância de mercado.</p>
-      <a href="#contrate" class="btn-cyan inline-block px-12 py-5 rounded-full text-lg uppercase tracking-wider">Solicitar Diagnóstico</a>
+      <p class="text-gray-400 text-lg lg:max-w-md mb-10 leading-relaxed animate-in" style="animation-delay: 0.2s">
+        A PONCE Assessoria ajuda restaurantes a atrair mais clientes, aumentar ticket médio e crescer de forma consistente usando estratégias digitais comprovadas.
+      </p>
+      <a href="#contrate" class="btn-cyan inline-block px-12 py-5 rounded-full text-lg uppercase tracking-wider animate-in" style="animation-delay: 0.4s">Solicitar Diagnóstico</a>
     </div>
     <div class="lg:w-1/2">
       <img src="ceos.jpg" alt="CEOs Ponce" class="rounded-3xl border border-white/10 shadow-2xl">
@@ -50,41 +52,31 @@
 
   <section id="sobre" class="py-32 px-6 bg-[#070707]">
     <div class="max-w-7xl mx-auto">
-      <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-        <div>
-          <span class="text-[#00F0FF] text-xs font-bold tracking-[0.4em] uppercase">The Ponce Standard</span>
-          <h2 class="font-display text-4xl lg:text-5xl font-bold mt-6 mb-8 text-white">Inteligência aplicada ao ritmo da cozinha.</h2>
-          <p class="text-gray-400 text-lg leading-relaxed mb-6">A PONCE nasceu da fusão entre análise de dados e branding de alto padrão. Atuamos no controle do CAC e na maximização do LTV para garantir lucro real.</p>
-          <div class="grid grid-cols-2 gap-8 mt-12">
-            <div><div class="text-3xl font-bold text-[#00F0FF]">4.8x</div><p class="text-gray-500 text-xs uppercase mt-2 font-bold">ROI Médio</p></div>
-            <div><div class="text-3xl font-bold text-[#00F0FF]">+120</div><p class="text-gray-500 text-xs uppercase mt-2 font-bold">Planos Criados</p></div>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 gap-4">
-          <div class="card-dark"><h4 class="text-[#00F0FF] font-bold mb-2">Metodologia Ágil</h4><p class="text-sm text-gray-500">Sprints de otimização semanal para escala constante.</p></div>
-          <div class="card-dark"><h4 class="text-[#00F0FF] font-bold mb-2">Foco em Resultado</h4><p class="text-sm text-gray-500">Marketing como centro de custo nunca; sempre como investimento.</p></div>
-        </div>
+      <div class="mb-24 text-center lg:text-left">
+        <span class="text-[#00F0FF] text-xs font-bold tracking-[0.4em] uppercase">A Categoria Ponce</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold mt-6 mb-8 text-white max-w-4xl">Uma marca criada para entregar crescimento gigantesco a restaurantes.</h2>
+        <p class="text-gray-400 text-lg leading-relaxed max-w-3xl">Em 2026, Natã Ponce e João Pedro perceberam que faltava um time que colocasse a mão na massa com os donos. Criamos a Ponce para ser essa dupla: gente que entende de dados e o ritmo da cozinha.</p>
       </div>
 
       <div class="text-center mb-16">
-        <h3 class="font-display text-4xl font-bold">Quem assina cada <span class="text-[#00F0FF]">Sprint?</span></h3>
+        <h3 class="font-display text-4xl font-bold italic">Quem assina cada <span class="text-[#00F0FF]">Sprint?</span></h3>
       </div>
-      <div class="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         <div class="card-dark group">
           <div class="overflow-hidden rounded-2xl mb-8">
-            <img src="nata.jpg" alt="Natã Ponce" class="w-full h-[650px] object-cover grayscale group-hover:grayscale-0 transition duration-700">
+            <img src="nata.jpg" alt="Natã Ponce" class="w-full h-[550px] object-cover grayscale group-hover:grayscale-0 transition duration-700">
           </div>
           <h4 class="text-3xl font-bold">Natã Ponce</h4>
           <span class="text-[#00F0FF] text-xs font-bold uppercase tracking-widest block mb-6 italic">Chief Growth Officer (CGO)</span>
-          <p class="text-gray-400 text-base leading-relaxed">Responsável pela **arquitetura de performance** e mídia paga. Especialista em escala acelerada e aquisição de novos mercados via tráfego de alta conversão.</p>
+          <p class="text-gray-400 text-base leading-relaxed">Fã declarado de métricas e criatividade trabalhando juntas. Conduz as frentes de mídia paga e expansão geográfica, focando sempre em trazer o maior volume de clientes pelo menor custo possível.</p>
         </div>
         <div class="card-dark group">
           <div class="overflow-hidden rounded-2xl mb-8">
-            <img src="joao.jpg" alt="João Ponce" class="w-full h-[650px] object-cover grayscale group-hover:grayscale-0 transition duration-700">
+            <img src="joao.jpg" alt="João Ponce" class="w-full h-[550px] object-cover grayscale group-hover:grayscale-0 transition duration-700">
           </div>
           <h4 class="text-3xl font-bold">João Ponce</h4>
-          <span class="text-[#00F0FF] text-xs font-bold uppercase tracking-widest block mb-6 italic">Chief Strategy Officer (CSO)</span>
-          <p class="text-gray-400 text-base leading-relaxed">Lidera a **estratégia de branding e operações**. Garante que a marca tenha o posicionamento de elite necessário para atrair o público ideal e maximizar o faturamento.</p>
+          <span class="text-[#00F0FF] text-sm font-bold uppercase tracking-widest block mb-6 italic">Chief Strategy Officer (CSO)</span>
+          <p class="text-gray-400 text-base leading-relaxed">Estratégia é sua praia. Traduz dados complexos em planos de ações simples para o dia a dia do restaurante. Garante que cada parceiro tenha rituais alinhados e clareza sobre onde o negócio está indo.</p>
         </div>
       </div>
     </div>
@@ -93,24 +85,39 @@
   <section id="contrate" class="py-32 px-6 bg-black relative">
     <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20">
       <div>
-        <h2 class="font-display text-5xl font-bold mb-8 italic">O próximo nível do seu <span class="text-[#00F0FF]">império</span> começa aqui.</h2>
-        <p class="text-gray-500 mb-12">Preencha o formulário. Nossa equipe de estratégia analisará seus dados e entrará em contato para um diagnóstico gratuito.</p>
+        <h2 class="font-display text-5xl font-bold mb-8 italic leading-tight">Conte o momento do seu restaurante e nossa <span class="text-[#00F0FF]">EQUIPE</span> retorna com um plano honesto.</h2>
+        <div class="space-y-12 mt-12">
+            <div class="flex items-start gap-6">
+                <div class="bg-[#00F0FF]/10 w-12 h-12 rounded-lg flex items-center justify-center text-[#00F0FF] font-bold flex-shrink-0">1</div>
+                <div>
+                  <h4 class="font-bold text-lg mb-2 text-white">Compartilhe seus dados</h4>
+                  <p class="text-sm text-gray-500 leading-relaxed">Entender quem é você e o tamanho do seu desafio é o primeiro passo para uma conversa séria.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-6">
+                <div class="bg-[#00F0FF]/10 w-12 h-12 rounded-lg flex items-center justify-center text-[#00F0FF] font-bold flex-shrink-0">2</div>
+                <div>
+                  <h4 class="font-bold text-lg mb-2 text-white">Ligação Estratégica</h4>
+                  <p class="text-sm text-gray-500 leading-relaxed">Em até 8 horas úteis, ligamos para sugerir o sprint de crescimento ideal.</p>
+                </div>
+            </div>
+        </div>
       </div>
       
       <div id="form-container">
-        <form id="contact-form" class="bg-[#0d0d0d] p-10 rounded-3xl border border-white/5 space-y-4">
-            <input type="text" id="nome" placeholder="Seu Nome" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] outline-none text-white">
-            <input type="text" id="empresa" placeholder="Nome do Restaurante" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] outline-none text-white">
-            <select id="segmento" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-gray-500 outline-none">
+        <form id="contact-form" class="bg-[#0d0d0d] p-10 rounded-3xl border border-white/5 space-y-4 shadow-2xl">
+            <input type="text" id="nome" placeholder="Seu Nome Completo" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] outline-none text-white transition">
+            <input type="text" id="empresa" placeholder="Nome do Restaurante" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] outline-none text-white transition">
+            <select id="segmento" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-gray-500 outline-none cursor-pointer">
                 <option value="" disabled selected>Qual seu segmento?</option>
                 <option>Restaurante</option><option>Pizzaria</option><option>Hamburgueria</option><option>Sushi Bar</option><option>Cafeteria</option><option>Outros</option>
             </select>
-            <input type="tel" id="telefone" placeholder="WhatsApp (DDD)" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] outline-none text-white">
-            <select id="faturamento" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-gray-500 outline-none">
+            <input type="tel" id="telefone" placeholder="WhatsApp (DDD)" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] outline-none text-white transition">
+            <select id="faturamento" required class="w-full px-6 py-4 rounded-xl bg-black border border-gray-800 focus:border-[#00F0FF] text-gray-500 outline-none cursor-pointer">
                 <option value="" disabled selected>Faturamento Mensal</option>
                 <option>Até 30k</option><option>30k a 100k</option><option>Acima de 100k</option>
             </select>
-            <button type="submit" class="btn-cyan w-full py-5 rounded-xl uppercase tracking-widest font-bold mt-4">Enviar Diagnóstico</button>
+            <button type="submit" class="btn-cyan w-full py-5 rounded-xl uppercase tracking-widest font-bold mt-4">Falar com Consultor</button>
         </form>
       </div>
     </div>
@@ -118,35 +125,31 @@
 
   <footer class="py-16 border-t border-white/5 text-center">
     <img src="logo.png" alt="PONCE" class="h-8 mx-auto mb-6 opacity-30">
-    <p class="text-gray-600 text-[10px] tracking-[0.3em] uppercase font-bold">© 2026 PONCE ASSESSORIA | MARKETING DE ELITE</p>
+    <p class="text-gray-600 text-[10px] tracking-[0.3em] uppercase">© 2026 PONCE ASSESSORIA | Estratégia Digital de Elite</p>
   </footer>
 
   <script>
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      
       const btn = e.target.querySelector('button');
       btn.innerText = "ENVIANDO...";
       btn.disabled = true;
 
       const msg = `🚀 *NOVO LEAD QUALIFICADO*\n\n*Nome:* ${document.getElementById('nome').value}\n*Empresa:* ${document.getElementById('empresa').value}\n*Segmento:* ${document.getElementById('segmento').value}\n*Faturamento:* ${document.getElementById('faturamento').value}`;
       
-      // Abre o WhatsApp em uma nova aba para não tirar o usuário do site
       window.open(`https://wa.me/5561995801020?text=${encodeURIComponent(msg)}`, '_blank');
 
-      // Feedback visual de sucesso no site
       setTimeout(() => {
         document.getElementById('form-container').innerHTML = `
-          <div class="bg-[#0d0d0d] p-16 rounded-3xl border border-[#00F0FF]/40 text-center animate-in">
+          <div class="bg-[#0d0d0d] p-16 rounded-3xl border border-[#00F0FF]/30 text-center animate-in">
             <div class="text-[#00F0FF] text-6xl mb-6">✓</div>
-            <h3 class="text-3xl font-bold mb-4 text-white">Solicitação Enviada!</h3>
-            <p class="text-gray-400 leading-relaxed">Sua análise estratégica foi encaminhada ao board. Verifique sua aba de WhatsApp para concluir o contato.</p>
+            <h3 class="text-3xl font-bold mb-4">Solicitação Enviada!</h3>
+            <p class="text-gray-400">Obrigado! Nossa equipe estratégica já recebeu seus dados e entrará em contato.</p>
           </div>
         `;
       }, 1000);
     });
 
-    // Máscara de Telefone Automática
     document.getElementById('telefone').addEventListener('input', function (e) {
       let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
       e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
